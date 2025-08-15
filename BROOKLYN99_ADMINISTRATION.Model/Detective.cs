@@ -1,10 +1,22 @@
-﻿namespace BROOKLYN99_ADMINISTRATION.Model;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BROOKLYN99_ADMINISTRATION.Model;
 
 public class Detective
 {
+    [Key]
+    [Required]
     public string Id { get; set; }
+    
+    [StringLength(50)]
+    [Required]
     public string Name { get; set; }
+    
+    [StringLength(50)]
+    [Required]
     public string Rank  { get; set; }
+    
+    [Required]
     public DateTime StartOfCareer { get; set; }
     
     public ICollection<Case> Cases { get; set; }

@@ -1,4 +1,6 @@
-﻿namespace BROOKLYN99_ADMINISTRATION.Model;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BROOKLYN99_ADMINISTRATION.Model;
 
 public enum Status
 {
@@ -9,14 +11,34 @@ public enum Status
 
 public class Case
 {
+    [Key]
+    [Required]
     public string Id { get; set; }
+    
+    [StringLength(50)]
+    [Required]
     public string Title { get; set; }
+    
+    [StringLength(1500)]
+    [Required]
     public string Description { get; set; }
+    
+    [Required]
     public Status Status { get; set; }
+    
+    [Required]
     public DateTime StartOfInvestigation { get; set; }
+    
+    [Required]
     public DateTime EndOfInvestigation { get; set; }
+    
+    [Required]
     public List<String> Suspects { get; set; }
+    
+    [Required]
     public List<String> Victims { get; set; }
+    
+    [Required]
     public List<string> Evidences { get; set; }
     
     public ICollection<Report> Reports { get; set; }
