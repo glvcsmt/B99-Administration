@@ -6,6 +6,8 @@ public class Detective
     public string Name { get; set; }
     public string Rank  { get; set; }
     public DateTime StartOfCareer { get; set; }
+    
+    public ICollection<Case> Cases { get; set; }
 
     public Detective(string id, string name, string rank, DateTime startOfCareer)
     {

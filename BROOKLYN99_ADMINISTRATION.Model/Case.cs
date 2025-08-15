@@ -18,6 +18,8 @@ public class Case
     public List<String> Suspects { get; set; }
     public List<String> Victims { get; set; }
     public List<string> Evidences { get; set; }
+    
+    public ICollection<Report> Reports { get; set; }
 
     public Case(string id, string title, string description, Status status, DateTime startOfInvestigation, DateTime endOfInvestigation, List<string> suspects, List<string> victims, List<string> evidences)
     {
