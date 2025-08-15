@@ -5,13 +5,13 @@ public class Detective
     public string Id { get; set; }
     public string Name { get; set; }
     public string Rank  { get; set; }
-    public DateTime StartOfInvestigation { get; set; }
+    public DateTime StartOfCareer { get; set; }
 
-    public Detective(string id, string name, string rank, DateTime startOfInvestigation)
+    public Detective(string id, string name, string rank, DateTime startOfCareer)
     {
         Id = id;
         Name = name;
         Rank = rank;
-        StartOfInvestigation = startOfInvestigation;
+        StartOfCareer = startOfCareer;
     }
 }
