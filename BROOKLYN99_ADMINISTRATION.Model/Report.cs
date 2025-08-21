@@ -11,7 +11,7 @@ public class Report
     public DateTime DateOfCreation { get; set; }
     
     [StringLength(10000)]
-    [Required]
+    [Required] 
     public string Content { get; set; }
 
     public Report(string id, DateTime dateOfCreation, string content)
