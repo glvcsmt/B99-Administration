@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BROOKLYN99_ADMINISTRATION.Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df4fbc89bb29d9a4f39a071327cff83ce40288d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eb2937a76cb6a2f892af67c79588e1c31d3d053")]
 [assembly: System.Reflection.AssemblyProductAttribute("BROOKLYN99_ADMINISTRATION.Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BROOKLYN99_ADMINISTRATION.Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
